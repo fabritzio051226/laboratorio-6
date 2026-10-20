@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetas rocosos | Sistema Solar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top barra">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🪐 Sistema Solar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina1.html">Página 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina2.html">Página 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina3.html">Página 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container pagina">
+        <h1 class="titulo">Planetas rocosos</h1>
+        <p class="subtitulo">Los cuatro planetas más cercanos al Sol</p>
+
+        <p>
+            Los planetas rocosos, también llamados planetas terrestres o telúricos, son Mercurio, Venus, la Tierra y
+            Marte. Se les dice así porque tienen una superficie sólida formada principalmente por rocas y metales, a
+            diferencia de los gigantes gaseosos que están hechos casi por completo de gases.
+        </p>
+        <p>
+            Son planetas pequeños y densos, con pocas o ninguna luna. Mercurio y Venus no tienen lunas, la Tierra tiene
+            una y Marte tiene dos lunas muy pequeñas llamadas Fobos y Deimos. Además, ninguno de ellos tiene anillos.
+        </p>
+        <p>
+            Aunque se parecen en su composición, sus condiciones son muy diferentes: Mercurio casi no tiene atmósfera,
+            Venus tiene una atmósfera tan densa que atrapa el calor y lo convierte en el planeta más caliente, y Marte es
+            frío y desértico. La Tierra es el único donde se conoce la existencia de vida.
+        </p>
+
+        <!-- Componente de Bootstrap 1: Cards -->
+        <div class="row g-4 my-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 tarjeta">
+                    <img src="img/mercurio.jpg" class="card-img-top" alt="Planeta Mercurio">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercurio</h5>
+                        <p class="card-text">El más pequeño y el más cercano al Sol. Un año dura solo 88 días.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 tarjeta">
+                    <img src="img/venus.jpg" class="card-img-top" alt="Planeta Venus">
+                    <div class="card-body">
+                        <h5 class="card-title">Venus</h5>
+                        <p class="card-text">El más caliente, con unos 465 °C en su superficie. Gira al revés que los demás.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 tarjeta">
+                    <img src="img/tierra.jpg" class="card-img-top" alt="Planeta Tierra">
+                    <div class="card-body">
+                        <h5 class="card-title">Tierra</h5>
+                        <p class="card-text">Nuestro hogar. El 71% de su superficie está cubierta de agua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 tarjeta">
+                    <img src="img/marte.jpg" class="card-img-top" alt="Planeta Marte">
+                    <div class="card-body">
+                        <h5 class="card-title">Marte</h5>
+                        <p class="card-text">El planeta rojo. Tiene el volcán más alto conocido, el Monte Olimpo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Componente de Bootstrap 2: Accordion -->
+        <h2 class="h4 mt-5 mb-3">Datos curiosos</h2>
+        <div class="accordion" id="acordeonDatos">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="h1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1" aria-expanded="true" aria-controls="c1">
+                        ¿Por qué Marte es rojo?
+                    </button>
+                </h2>
+                <div id="c1" class="accordion-collapse collapse show" aria-labelledby="h1" data-bs-parent="#acordeonDatos">
+                    <div class="accordion-body">
+                        Su suelo tiene mucho óxido de hierro, que es básicamente lo mismo que el óxido que se le forma a los metales.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="h2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2" aria-expanded="false" aria-controls="c2">
+                        ¿En Venus un día dura más que un año?
+                    </button>
+                </h2>
+                <div id="c2" class="accordion-collapse collapse" aria-labelledby="h2" data-bs-parent="#acordeonDatos">
+                    <div class="accordion-body">
+                        Sí. Venus tarda unos 243 días terrestres en girar sobre sí mismo, pero solo 225 días en darle la vuelta al Sol.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="h3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3" aria-expanded="false" aria-controls="c3">
+                        ¿Mercurio es el planeta más caliente?
+                    </button>
+                </h2>
+                <div id="c3" class="accordion-collapse collapse" aria-labelledby="h3" data-bs-parent="#acordeonDatos">
+                    <div class="accordion-body">
+                        No. Aunque está más cerca del Sol, casi no tiene atmósfera para guardar el calor, así que en la noche baja a -180 °C.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4">
+        <small>Fabritzio Xavier Sánchez Alvarado · 2059273 · Programación Web - Laboratorio 6</small>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

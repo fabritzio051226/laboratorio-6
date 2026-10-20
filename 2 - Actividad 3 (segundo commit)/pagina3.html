@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sol y la Luna | Sistema Solar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top barra">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🪐 Sistema Solar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina1.html">Página 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina2.html">Página 2</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina3.html">Página 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container pagina">
+        <h1 class="titulo">El Sol y la Luna</h1>
+        <p class="subtitulo">Nuestra estrella y nuestro satélite natural</p>
+
+        <!-- Componente de Bootstrap 1: Alert -->
+        <div class="alert alert-warning d-flex align-items-center" role="alert">
+            <span class="fs-4 me-2">⚠️</span>
+            <div>Nunca veas el Sol directamente, ni siquiera durante un eclipse, sin lentes especiales certificados.</div>
+        </div>
+
+        <div class="row g-4 align-items-center my-2">
+            <div class="col-md-5">
+                <img src="img/sol.jpg" class="img-fluid rounded-3 shadow" alt="El Sol">
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3">El Sol</h2>
+                <p>
+                    El Sol es una estrella de tipo enana amarilla y contiene el 99.8% de toda la masa del Sistema Solar. En
+                    su centro se fusionan átomos de hidrógeno para formar helio, y en ese proceso se libera la energía que
+                    llega a la Tierra como luz y calor. La luz del Sol tarda alrededor de 8 minutos en llegar hasta nosotros.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4 align-items-center my-2 flex-md-row-reverse">
+            <div class="col-md-5">
+                <img src="img/luna.jpg" class="img-fluid rounded-3 shadow" alt="La Luna">
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3">La Luna</h2>
+                <p>
+                    La Luna es el único satélite natural de la Tierra y está a unos 384,400 km de distancia. Siempre nos muestra
+                    la misma cara porque tarda lo mismo en girar sobre sí misma que en darle la vuelta a la Tierra. Sus cráteres
+                    se formaron por el choque de asteroides y, como casi no tiene atmósfera, se han conservado por millones de años.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4 align-items-center my-2">
+            <div class="col-md-5">
+                <img src="img/tierra.jpg" class="img-fluid rounded-3 shadow" alt="La Tierra vista desde el espacio">
+            </div>
+            <div class="col-md-7">
+                <h2 class="h3">¿Cómo nos afectan?</h2>
+                <p>
+                    Gracias al Sol existen las estaciones del año, el clima y la fotosíntesis de las plantas. La Luna, por su
+                    parte, provoca las mareas con su fuerza de gravedad y ayuda a que el eje de la Tierra se mantenga estable.
+                    Cuando el Sol, la Tierra y la Luna se alinean ocurren los eclipses.
+                </p>
+                <!-- Componente de Bootstrap 2: Modal -->
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEclipses">
+                    ¿Qué tipos de eclipse hay?
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalEclipses" tabindex="-1" aria-labelledby="tituloEclipses" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloEclipses">🌑 Tipos de eclipse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Eclipse solar:</b> la Luna se pone entre el Sol y la Tierra y tapa la luz del Sol.</li>
+                        <li class="list-group-item"><b>Eclipse lunar:</b> la Tierra se pone entre el Sol y la Luna y su sombra cubre a la Luna.</li>
+                        <li class="list-group-item"><b>Eclipse anular:</b> la Luna no alcanza a tapar todo el Sol y se ve un "anillo de fuego".</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <small>Fabritzio Xavier Sánchez Alvarado · 2059273 · Programación Web - Laboratorio 6</small>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
